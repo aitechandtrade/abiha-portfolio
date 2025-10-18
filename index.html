@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Abiha Aabish Canvas</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the dark grey, lilac, baby pink, and coffee palette */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* New: Dark Mauve-Grey background - significantly darker than before */
+            background-color: #4A415A; 
+            /* New: Light text for primary readability */
+            color: #D1D5DB; 
+        }
+        .f1-red {
+            /* New: Lighter red for visibility on dark BG */
+            color: #F87171; 
+        }
+        .f1-bg-red {
+            /* New: Deeper red for background pop */
+            background-color: #B91C1C;
+        }
+        .baby-pink {
+            color: #F8B4CC; /* Baby Pink accent */
+        }
+        .bg-baby-pink {
+            background-color: #F8B4CC;
+        }
+        .coffee-color {
+            /* New: Slightly lighter coffee brown for contrast on dark BG */
+            color: #A0522D; 
+        }
+        .card {
+            /* New: Slightly lighter shade of the BG color for depth */
+            background-color: #585068; 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Darker shadow for dark mode */
+        }
+        .card h2, .card h3 {
+            color: #FFFFFF; /* Ensures primary headings inside cards are white */
+        }
+        .border-f1 {
+            border-color: #F87171; /* Use the new light red */
+        }
+        .border-baby-pink {
+            border-color: #F8B4CC;
+        }
+        .subtle-text {
+            color: #BCC0C5; /* Very light secondary text for descriptions/details */
+        }
+        .subtle-bg {
+             /* Used for image background cards */
+            background-color: #4A415A; 
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #A78BFA; /* Lavender for scrollbar */
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 sm:p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <!-- HEADER / HERO SECTION --><header class="text-center py-12 rounded-xl card mb-10 border-b-4 border-f1">
+            <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight text-white">
+                ABIHA <span class="baby-pink">AABISH</span>
+            </h1>
+            <p class="mt-4 text-xl sm:text-2xl font-light italic subtle-text">
+                "Live to find the person you love."
+            </p>
+        </header>
+
+        <!-- MAIN CONTENT GRID --><main class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- COLUMN 1: Vitals & Identity --><div class="lg:col-span-1 space-y-6">
+                
+                <section class="p-6 rounded-xl card border-l-4 border-baby-pink">
+                    <h2 class="text-2xl font-bold mb-4 coffee-color">Identity & Vitals</h2>
+                    <dl class="space-y-3 subtle-text">
+                        <div>
+                            <dt class="font-medium f1-red">Name:</dt>
+                            <dd class="ml-2">Abiha Aabish (Age 16, 2009)</dd>
+                        </div>
+                        <div>
+                            <dt class="font-medium f1-red">Current Location:</dt>
+                            <dd class="ml-2">UAE (Student/Sleeper)</dd>
+                        </div>
+                        <div>
+                            <dt class="font-medium f1-red">Chronotype:</dt>
+                            <dd class="ml-2">Night Owl, F.S.</dd>
+                        </div>
+                        <div>
+                            <dt class="font-medium f1-red">Go-To Comfort:</dt>
+                            <dd class="ml-2">Music, Sleep, and Eating Cookies</dd>
+                        </div>
+                        <div>
+                            <dt class="font-medium f1-red">Favorite Genres:</dt>
+                            <dd class="ml-2">Alt-Pop, Soft Romance</dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <section class="p-6 rounded-xl card border-l-4 border-baby-pink">
+                    <h2 class="text-2xl font-bold mb-4 coffee-color">Future Directions</h2>
+                    <p class="subtle-text">
+                        Hoping to pursue a path of discovery, whether deep inside human society or deep beneath the waves.
+                    </p>
+                    <ul class="mt-3 space-y-2 text-lg font-semibold text-white">
+                        <li>&rightarrow; Criminology</li>
+                        <li>&rightarrow; Marine Biology</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- COLUMN 2: Formula 1 Obsession --><section class="lg:col-span-2 p-6 rounded-xl card space-y-6">
+                <h2 class="text-3xl font-bold f1-red tracking-wider border-b pb-3 border-gray-500">
+                    <span class="coffee-color">F1</span> // THE GRAND PRIX ESCAPE
+                </h2>
+                <p class="subtle-text text-lg">
+                    The ultimate dream is to travel the world following the F1 calendar. My ideal day includes watching a crime podcast and hoping to travel to catch the thrill of the three greatest tracks.
+                </p>
+
+                <!-- F1 TRACKS LIST --><div class="flex flex-wrap gap-4 justify-center">
+                    <span class="f1-bg-red text-white px-4 py-2 rounded-full font-semibold shadow-lg">MONZA (Italy)</span>
+                    <span class="f1-bg-red text-white px-4 py-2 rounded-full font-semibold shadow-lg">COTA (USA)</span>
+                    <span class="f1-bg-red text-white px-4 py-2 rounded-full font-semibold shadow-lg">ROME (E-Prix / Dream City)</span>
+                </div>
+                
+                <h3 class="text-xl font-semibold mt-6 coffee-color">Era of Iconic Grey and Red Machines</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <!-- F1 Image 1: MP4/4 Reference --><div class="subtle-bg p-3 rounded-lg text-center">
+                        <img src="https://f1chronicle.com/wp-content/uploads/2021/02/McLaren-MP44-1.jpg" class="w-full h-40 object-cover rounded-md mb-2" alt="The iconic McLaren MP4/4 F1 car">
+                        <p class="text-sm font-medium text-white">The 1988 Dominator: <span class="f1-red">McLaren MP4/4</span></p>
+                    </div>
+
+                    <!-- F1 Image 2: F2002 Reference --><div class="subtle-bg p-3 rounded-lg text-center">
+                        <img src="https://images.hgmsites.net/hug/2002-ferrari-f2001b-f1-car-driven-by-michael-schumacher--photo-via-rm-sothebys_100938914_h.webp" class="w-full h-40 object-cover rounded-md mb-2" alt="The 2002 Ferrari F2002 F1 car">
+                        <p class="text-sm font-medium text-white">The 2002 Masterpiece: <span class="f1-red">Ferrari F2002</span></p>
+                    </div>
+
+                    <!-- F1 Image 3: Modern Silver Arrow --><div class="subtle-bg p-3 rounded-lg text-center">
+                        <img src="https://mclaren.bloomreach.io/delivery/resources/content/gallery/mclaren-racing/formula-1/2025/2025-schedule/united-states-gp/livery-launch/gemini-article-cover-wide.jpg" class="w-full h-40 object-cover rounded-md mb-2" alt="Modern Hybrid F1 car livery">
+                        <p class="text-sm font-medium text-white">The Hybrid Era: Precision Engineering</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- COLUMN 3: Music Taste & Home Cafe --><section class="lg:col-span-3 p-6 rounded-xl card space-y-6">
+                <h2 class="text-3xl font-bold tracking-wider border-b pb-3 border-gray-500 coffee-color">
+                    &theta; MY <span class="baby-pink">VIBE</span> // HOME CAFE &theta;
+                </h2>
+
+                <!-- Music Taste Section --><div class="space-y-4">
+                    <h3 class="text-xl font-semibold coffee-color">Current Soundtrack: Alt-Pop & Soft Romance</h3>
+                    <p class="subtle-text italic">
+                        A curated mix for every mood, from introspective nights to hopeful mornings.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                        <!-- Haiden Henderson --><div class="text-center">
+                            <a href="https://example.com/haiden" target="_blank">
+                                <img src="https://images.genius.com/483a1232ab89b41cb7fd3665a09fdaaf.976x976x1.png" class="w-full h-auto rounded-md shadow-lg mb-2 mx-auto max-w-[200px]" alt="Haiden Henderson album art">
+                            </a>
+                            <p class="text-sm font-medium text-white">Haiden Henderson</p>
+                            <p class="text-xs subtle-text">_Artist Name_</p>
+                        </div>
+                        <!-- Mico --><div class="text-center">
+                            <a href="https://example.com/mico" target="_blank">
+                                <img src="https://images.genius.com/30113c48cecf4bc26b0f60e8c66fc827.1000x1000x1.jpg" class="w-full h-auto rounded-md shadow-lg mb-2 mx-auto max-w-[200px]" alt="Mico album art">
+                            </a>
+                            <p class="text-sm font-medium text-white">Mico</p>
+                            <p class="text-xs subtle-text">_Artist Name_</p>
+                        </div>
+                        <!-- Gunboikaz --><div class="text-center">
+                            <a href="https://example.com/gunboikaz" target="_blank">
+                                <img src="https://cdn-images.dzcdn.net/images/cover/777218f45f4e79dd1d7fe545b34dab8b/1900x1900-000000-81-0-0.jpg" class="w-full h-auto rounded-md shadow-lg mb-2 mx-auto max-w-[200px]" alt="Gunboikaz album art">
+                            </a>
+                            <p class="text-sm font-medium text-white">Gunboikaz</p>
+                            <p class="text-xs subtle-text">_Artist Name_</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm subtle-text">
+                        <span class="f1-red">Recent Watch:</span> *Perks of Being a Wallflower* - A classic for soft romance vibes.
+                    </p>
+                </div>
+
+                <!-- Home Cafe Section with Recipe --><div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <div>
+                        <h3 class="text-xl font-semibold coffee-color">The Art of the Brew</h3>
+                        <p class="subtle-text text-lg mb-4">
+                            Your passion for crafting hot drinks—like <strong>hot cocoa and coffee</strong>—aligns perfectly with the modern <strong>Home Café Culture</strong>. It's about the ritual, the perfect preparation, and the cozy outcome.
+                        </p>
+                        <p class="subtle-text font-light italic">
+                            The perfect coffee pairs best with a dark, rich cookie and a podcast on unsolved cases.
+                        </p>
+                        <ul class="list-disc list-inside ml-4 subtle-text mt-4">
+                            <li>Focus on the perfect temperature for a <strong>Hot Cocoa</strong> night.</li>
+                            <li>Experimenting with the latest Cold Brew or Snapchilled Coffee trends.</li>
+                            <li>Finding the ideal roast for a late-night study session.</li>
+                        </ul>
+                    </div>
+
+                    <!-- NEW: Hot Cocoa Recipe --><div>
+                        <h3 class="text-xl font-semibold baby-pink">Night Owl Mocha Cocoa (Abiha's Method)</h3>
+                        <p class="subtle-text italic mb-3">The perfect comfort and caffeine boost for a crime podcast night.</p>
+                        
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-white">Ingredients (Single Serving)</h4>
+                            <ul class="list-disc list-inside ml-4 subtle-text">
+                                <li><strong>2 tbsp Cocoa Powder</strong> (Unsweetened)</li>
+                                <li><strong>2.5 tbsp Sugar</strong> (or to taste)</li>
+                                <li><strong>1/2 tsp Instant Coffee Powder</strong> (or 1 shot strong Espresso)</li>
+                                <li>Pinch of Salt (enhances cocoa flavor)</li>
+                                <li>1 cup Milk (Dairy or Oat)</li>
+                                <li><strong>Dash of Vanilla Extract</strong></li>
+                                <li><strong>Dash of Cinnamon</strong> (plus extra for topping)</li>
+                                <li><strong>Dash of Coconut Oil</strong> (adds richness)</li>
+                            </ul>
+
+                            <h4 class="font-bold text-white pt-2">Instructions</h4>
+                            <ol class="list-decimal list-inside ml-4 subtle-text">
+                                <li><strong>Flavor the Milk:</strong> Combine the milk, vanilla extract, cinnamon, and coconut oil in a saucepan or sealed container. Heat until steaming hot (do not boil).</li>
+                                <li><strong>Emulsify:</strong> Thoroughly stir or <em>shake</em> the hot mixture to fully incorporate the coconut oil and flavors.</li>
+                                <li><strong>The Slurry:</strong> In your favorite mug, mix the <strong>cocoa powder</strong>, <strong>sugar</strong>, <strong>instant coffee powder</strong>, and <strong>salt</strong>.</li>
+                                <li><strong>Make the Paste:</strong> Pour a small amount (approx. 2 tbsp) of the hot, flavored milk into the mug and mix vigorously to create a smooth, thick paste (dissolving the coffee/cocoa).</li>
+                                <li><strong>Finish:</strong> Top up the mug with the remaining hot milk mixture. Stir well.</li>
+                                <li><strong>Garnish:</strong> Finish with a dash of <strong>extra cinnamon</strong> on top. Serve immediately!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW: Daniel Ricciardo Section --><div class="card p-6 rounded-xl mt-8 md:col-span-2 border-t-4 border-f1 text-center">
+                    <h3 class="text-2xl font-bold coffee-color mb-4">DR <span class="f1-red">3</span> // THE HONEY BADGER</h3>
+                    <img src="https://i.dailymail.co.uk/1s/2021/09/12/22/47828309-9983563-image-a-2_1631483527463.jpg" class="w-full rounded-md mb-4 mx-auto" alt="Daniel Ricciardo smiling in his racing gear">
+                    <p class="subtle-text text-lg italic">
+                        "If I can live my life happy, smiling, having a good time, then I've kind of won already."
+                    </p>
+                    <p class="mt-4 text-white text-md">
+                        As the biggest fan of <span class="f1-red font-semibold">Daniel Ricciardo</span>, his infectious smile, audacious overtakes, and unwavering positive spirit truly embody the thrill of Formula 1. From the shoey celebrations to his 'Honey Badger' grit, DR3 brings unparalleled joy and excitement to the track.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
